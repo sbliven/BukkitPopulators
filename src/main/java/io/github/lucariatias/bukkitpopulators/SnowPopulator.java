@@ -25,8 +25,10 @@ public class SnowPopulator extends BlockPopulator {
 					
 					if (y > 5){
 						Block block = chunk.getBlock(x, y, z);
-						
-						if (block.getRelative(BlockFace.DOWN).getType() != Material.AIR){
+
+						Block down = block.getRelative(BlockFace.DOWN);
+						if ( !( down.isEmpty() || down.isLiquid() ||
+								down.getType() == Material.ICE ) ){
 							block.setType(Material.SNOW);
 						}
 					}
