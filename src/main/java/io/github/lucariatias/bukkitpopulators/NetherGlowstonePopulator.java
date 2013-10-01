@@ -13,6 +13,7 @@ public class NetherGlowstonePopulator extends BlockPopulator {
 		return (x * x) + (y * y) + (z * z); 
 	}
 	
+	@Override
 	public void populate(World world, Random random, Chunk chunk){
 		if (random.nextInt(100) < 12){
 			Integer x = 5 + random.nextInt(6);

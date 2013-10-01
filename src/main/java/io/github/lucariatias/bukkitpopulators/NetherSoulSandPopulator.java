@@ -12,6 +12,7 @@ import org.bukkit.util.noise.SimplexOctaveGenerator;
 
 public class NetherSoulSandPopulator extends BlockPopulator {
 	
+	@Override
 	public void populate(World world, Random rand, Chunk chunk){
 		int chunkX = chunk.getX();
 		int chunkZ = chunk.getZ();

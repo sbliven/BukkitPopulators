@@ -21,6 +21,7 @@ public class NetherFirePopulator extends BlockPopulator {
 		}
 	}
 	
+	@Override
 	public void populate(World world, Random random, Chunk chunk){
 		if (random.nextInt(100) < 25){
 			Integer x = 5 + random.nextInt(6);

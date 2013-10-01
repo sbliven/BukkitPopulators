@@ -11,6 +11,7 @@ import org.bukkit.generator.BlockPopulator;
 
 public class EndTowerPopulator extends BlockPopulator {
 	
+	@Override
 	public void populate(World world, Random random, Chunk chunk){
 		if (random.nextInt(100) < 10){
 			int x = random.nextInt(8) + 4;
